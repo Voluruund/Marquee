@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.mt-200{
+    margin-top: 200px;
+}
+
+.text-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    background-color: cadetblue;
+    overflow: hidden;
+    width: 200%;
+}
+
+.text-wrapper > h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: #fff;
+    white-space: nowrap;
+    padding: 0 6rem;
+    letter-spacing: 1px;
+    animation: move-rtl 6s linear infinite;
+}
+
+.r-30{
+    transform: rotate(5deg);
+}
+
+@keyframes move-rtl {
+ 0%{
+    transform: translateX(0);
+ }100%{
+    transform: translateX(-100%);
+ }
+}
